@@ -16,70 +16,19 @@
     <main class="mainProdutos">
         <section class="produtos">
             <h2 class="tituloMeusProdutos">Meus produtos:</h2>
-            <div class="containerProdutos">
-                <div class="linhaProdutos">
-                    <div class="cardProduto">
-                        <img src="assets/image1.svg" alt=""  class="imagemProduto">
-                        <p class="paragrafoProduto">Stormtrooper</p>
-                        <p class="paragrafoValor">$ 60,00<button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                    <div class="cardProduto">
-                        <img src="assets/image2.svg" alt="" class="imagemProduto">
-                        <p class="paragrafoProduto">Game Boy Classic</p>
-                        <p class="paragrafoValor">$ 60,00 <button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                    <div class="cardProduto">
-                        <img src="assets/image1.svg" alt="" class="imagemProduto">
-                        <p class="paragrafoProduto">Stormtrooper</p>
-                        <p class="paragrafoValor">$ 60,00<button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                </div>
-            </div>
-            <div class="containerProdutos">
-                <div class="linhaProdutos">
-                    <div class="cardProduto">
-                        <img src="assets/image2.svg" alt=""  class="imagemProduto">
-                        <p class="paragrafoProduto">Game Boy Classic</p>
-                        <p class="paragrafoValor">$ 60,00<button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                    <div class="cardProduto">
-                        <img src="assets/image1.svg" alt="" class="imagemProduto">
-                        <p class="paragrafoProduto">Stormtrooper</p>
-                        <p class="paragrafoValor">$ 60,00<button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                    <div class="cardProduto">
-                        <img src="assets/image2.svg" alt="" class="imagemProduto">
-                        <p class="paragrafoProduto">Game Boy Classic</p>
-                        <p class="paragrafoValor">$ 60,00<button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                </div>
-            </div>
-            <div class="containerProdutos">
-                <div class="linhaProdutos">
-                    <div class="cardProduto">
-                        <img src="assets/image1.svg" alt=""  class="imagemProduto">
-                        <p class="">Stormtrooper</p>
-                        <p class="paragrafoValor">$ 60,00<button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                    <div class="cardProduto">
-                        <img src="assets/image2.svg" alt="" class="imagemProduto">
-                        <p class="paragrafoProduto">Game Boy Classic</p>
-                        <p class="paragrafoValor">$ 60,00<button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                    <div class="cardProduto">
-                        <img src="assets/image1.svg" alt="" class="imagemProduto">
-                        <p class="paragrafoProduto">Stormtrooper</p>
-                        <p class="paragrafoValor">$ 60,00<button type="submit" class="botaoLixo"><img src="assets/trash.svg" alt="" class="iconTrash"></button></p>
-                    </div>
-                </div>
+            <div class="containerProdutos" data-produtos>
+
             </div>  
         </section>
         <section class="containerAdicionarProduto">
-            <h2 class="adicionarProduto">Adicionar produto:</h2>
-            <form class="formularioAdicionarProduto">
-                <input type="text" id="nomeDoProduto" name="nomeDoProduto" class="formulario campoFormulario" placeholder="Nome..."><br>
-                <input type="text" id="valorDoProduto" name="valorDoProduto" class="formulario campoFormulario" placeholder="Valor..."><br>
-                <input type="text" id="imagemDoProduto" name="imagemDoProduto" class="formulario campoFormulario" placeholder="Imagem..."><br>
+            <form class="formularioAdicionarProduto" data-formulario>
+                <h2 class="adicionarProduto">Adicionar produto:</h2>
+                <input type="text" id="nome" name="nome" class="formulario campoFormulario" placeholder="Nome..." data-nome><br>
+                <span class="alerta alertaNome"></span>
+                <input type="text" id="valor" name="valor" class="formulario campoFormulario" placeholder="Valor..." data-valor><br>
+                <span class="alerta alertaValor"></span>
+                <input type="text" id="imagem" name="imagem" class="formulario campoFormulario" placeholder="Imagem..." data-imagem><br>
+                <span class="alerta alertaImagem"></span>
                 <div class="containerBotao">
                     <button type="submit" class="botao botaoGuardar">Guardar</button> <button type="reset" class="botao botaoLimpar">Limpar</button>
                 </div>
@@ -92,5 +41,7 @@
         <p class="paragrafoRodape">ONE e Alura Latam - 2024</p>
     </footer>
     <script src="java-script/main.js" type="module"></script>
+    <script src="java-script/guardar.js" type="module"></script>
+    <script src="java-script/excluir.js" type="module"></script>
 </body>
 </html>

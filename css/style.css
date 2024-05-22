@@ -43,26 +43,34 @@
 }
 
 .produtos {
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     /*overflow-y: scroll;*/
-    gap: 50px;
+    gap: 30px;
     align-items: center;
 }
 
-.tituloMeusProdutos {
+.tituloMeusProdutos, .tituloErro {
     font-size: 2rem;
     text-align: center;
     font-family: var(--font-title);
 }
 
-.linhaProdutos {
+.tituloErro {
+    color: red;
+}
+
+.containerProdutos {
     display: flex;
-    gap: 10px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .cardProduto {
+    flex: 1 1 calc(30%-30);
     background-color: var(--background-color-2);
     border: 3px dashed black;
     border-radius: 10px;
@@ -74,13 +82,13 @@
 
 .botaoLixo {
     float: right;
-    transition: border 0.5s;
+    cursor: pointer;
 }
 
 /* FORMULARIO */
 
 .containerAdicionarProduto {
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -90,7 +98,14 @@
     margin: 30px;
 }
 
+.formularioAdicionarProduto {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 .adicionarProduto {
+    margin-bottom: 40px;
     text-align: center;
     font-size: 1.5rem;
     font-family: var(--font-title);
@@ -103,6 +118,10 @@
     width: 100%;
     font-family: var(--font-text);
     font-size: var(--font-size-text);
+}
+
+.alerta {
+    display: none;
 }
 
 .campoFormulario:hover {

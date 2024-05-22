@@ -1,5 +1,12 @@
-const campoFormulario = document.querySelectorAll('.formulario');
-const botaoGuardar = document.querySelector('.botaoGuardar');
-const botaoResetar = document.querySelector('.botaoResetar');
-const botaoLixo = document.querySelector('.botaoLixo');
+import constroiCard from "./mostrarProdutos.js";
 
+import validadorFormulario from "./validar.js";
+
+const camposDoFormulario = document.querySelectorAll(".formulario");
+
+camposDoFormulario.forEach((campo) => {
+    campo.addEventListener('blur', () => validadorFormulario(campo));
+    campo.addEventListener('submit', () => validadorFormulario(campo));
+})
+
+constroiCard();

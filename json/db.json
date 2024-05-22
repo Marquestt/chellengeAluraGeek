@@ -1,0 +1,52 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "imagem": "assets/image1.svg",
+      "nome": "Stormtrooper",
+      "valor": "60,00"
+    },
+    {
+      "id": 2,
+      "imagem": "assets/image2.svg",
+      "nome": "Game Boy Classic",
+      "valor": "60,00"
+    },
+    {
+      "id": 3,
+      "imagem": "assets/image1.svg",
+      "nome": "Stormtrooper",
+      "valor": "60,00"
+    },
+    {
+      "id": 4,
+      "imagem": "assets/image1.svg",
+      "nome": "Stormtrooper",
+      "valor": "60,00"
+    },
+    {
+      "id": 5,
+      "imagem": "assets/image1.svg",
+      "nome": "Stormtrooper",
+      "valor": "60,00"
+    },
+    {
+      "id": 6,
+      "imagem": "assets/image1.svg",
+      "nome": "Stormtrooper",
+      "valor": "60,00"
+    },
+    {
+      "id": "e471",
+      "nome": "Poster Darling in the Franxx",
+      "valor": "$ 100,00",
+      "imagem": "https://i.pinimg.com/564x/e2/f1/90/e2f19025abbe3a3dc4e58f166fe581ac.jpg"
+    },
+    {
+      "id": "6ef6",
+      "nome": "Mouse Redragon",
+      "valor": "$ 169,99",
+      "imagem": "https://i.pinimg.com/564x/88/de/55/88de55f7e115be5a0d6a7804ca7de689.jpg"
+    }
+  ]
+}
