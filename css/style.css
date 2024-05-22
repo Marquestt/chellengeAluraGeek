@@ -1,0 +1,149 @@
+/* ROOT */
+
+:root {
+    --font-title: "Press Start 2P", system-ui;
+    --font-text: "IBM Plex Mono", monospace;
+    --font-size-text: 0.8rem;
+    --font-color: ;
+    --card-color: ;
+    --button-color: ;
+    --background-color: ;
+}
+
+.cabecalho, .rodape {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+/*CABEÇALHO*/
+
+.cabecalho {
+    padding: 1.5%;
+}
+
+/* CORPO */
+
+/* PRODUTOS */
+
+.mainProdutos {
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin: 50px;
+}
+
+.produtos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* overflow: scroll; */
+    gap: 50px;
+    align-items: center;
+}
+
+.tituloMeusProdutos {
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+.linhaProdutos {
+    display: flex;
+    gap: 10px;
+}
+
+.cardProduto {
+    background-color: blueviolet;
+    border: 3px dashed black;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 5px 5px 0 grey;
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+}
+
+.botaoLixo {
+    float: right;
+}
+
+
+/*LATERAL*/
+
+.containerAdicionarProduto {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 30px;
+    margin: 30px;
+}
+
+.adicionarProduto {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--font-title);
+}
+
+.campoFormulario {
+    border: 2px dashed blue;
+    border-radius: 20px;
+    padding: 10px 50px 10px 10px;
+    width: 100%;
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+}
+
+.campoFormulario:hover {
+    border: 2px solid blueviolet;
+}
+
+.campoFormulario:focus {
+    border: 2px solid blueviolet;
+}
+
+.campoFormulario, .botao {
+    margin-bottom: 15px;
+}
+
+.containerBotao {
+    display: flex;
+    gap: 5px;
+}
+
+.botao {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    opacity: 50%;
+    transition: opacity 0.5s;
+    width: 50%;
+    box-shadow: 0 5px 5px 0 gray;
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+}
+
+.botao:hover {
+    opacity: 100%;
+}
+
+.botao:active {
+    box-shadow: 0 2px 2px 0 black;
+    transform: translateY(4px);
+}
+
+/* RODAPE */
+
+.rodape {
+    padding: 2%;
+    font-family: var(--font-text);
+}
+
+.paragrafoRodape {
+    padding: 5px;
+}
