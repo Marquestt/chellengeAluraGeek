@@ -1,3 +1,5 @@
+import { validarFormulario } from "./validaForm.js";
+
 async function cardProdutos() {
     const conexao = await fetch("http://localhost:3000/produtos");
     const conexaoConvertida = await conexao.json();
@@ -13,7 +15,7 @@ async function guardar(nome, valor, imagem, id) {
         },
         body: JSON.stringify({
             nome: nome,
-            valor: `$ ${valor}`,
+            valor: `${valor}`,
             imagem: imagem,
             id: id
         })
@@ -29,20 +31,14 @@ async function guardar(nome, valor, imagem, id) {
 async function excluirProduto(id) {
     const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
         method: "DELETE"
-        ,
-		headers: {
-			'Content-Type': 'application/json',
-		}
     });
     window.location.reload();
-
     if (!conexao.ok) {
         throw new Error("Não foi possível excluir o produto");
     }
 
     return await conexao.json();
 }
-
 
 export const conectaAPI = {
     cardProdutos,

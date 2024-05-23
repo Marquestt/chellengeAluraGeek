@@ -1,52 +1,34 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "imagem": "assets/image1.svg",
-      "nome": "Stormtrooper",
-      "valor": "60,00"
-    },
-    {
-      "id": 2,
+      "id": "2",
       "imagem": "assets/image2.svg",
       "nome": "Game Boy Classic",
       "valor": "60,00"
     },
     {
-      "id": 3,
+      "id": "3",
       "imagem": "assets/image1.svg",
       "nome": "Stormtrooper",
       "valor": "60,00"
     },
     {
-      "id": 4,
-      "imagem": "assets/image1.svg",
-      "nome": "Stormtrooper",
-      "valor": "60,00"
+      "id": "fdb8",
+      "nome": "Acheron",
+      "valor": "20,00",
+      "imagem": "https://i.pinimg.com/736x/04/69/ea/0469ea1ec8903809fcae21fc4dd02010.jpg"
     },
     {
-      "id": 5,
-      "imagem": "assets/image1.svg",
-      "nome": "Stormtrooper",
-      "valor": "60,00"
+      "id": "f2c8",
+      "nome": "Frieren",
+      "valor": "21,00",
+      "imagem": "https://i.pinimg.com/736x/5a/fd/51/5afd51f1f23fcc5cc8aa4bdb5be1403a.jpg"
     },
     {
-      "id": 6,
-      "imagem": "assets/image1.svg",
-      "nome": "Stormtrooper",
-      "valor": "60,00"
-    },
-    {
-      "id": "e471",
-      "nome": "Poster Darling in the Franxx",
-      "valor": "$ 100,00",
-      "imagem": "https://i.pinimg.com/564x/e2/f1/90/e2f19025abbe3a3dc4e58f166fe581ac.jpg"
-    },
-    {
-      "id": "6ef6",
-      "nome": "Mouse Redragon",
-      "valor": "$ 169,99",
-      "imagem": "https://i.pinimg.com/564x/88/de/55/88de55f7e115be5a0d6a7804ca7de689.jpg"
+      "id": "214c",
+      "nome": "Zero Two",
+      "valor": "02,02",
+      "imagem": "https://i.pinimg.com/564x/6e/35/51/6e355189c8bce8da6d4a8c58acfa4040.jpg"
     }
   ]
 }

@@ -121,7 +121,8 @@
 }
 
 .alerta {
-    display: none;
+    color: red;
+    font-size: var(--font-size-text);
 }
 
 .campoFormulario:hover {

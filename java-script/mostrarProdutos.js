@@ -18,7 +18,7 @@ export default function constroiCard(imagem, nome, valor, id) {
 async function cardProdutos() {
     try {
         const cardApi = await conectaAPI.cardProdutos();
-        cardApi.forEach(elemento => card.appendChild(constroiCard(elemento.imagem, elemento.nome, elemento.valor)));
+        cardApi.forEach(elemento => card.appendChild(constroiCard(elemento.imagem, elemento.nome, elemento.valor, elemento.id)));
     }
     catch {
         card.innerHTML = `<h2 class="tituloErro">Não foi possível carregar a lista de produtos</h2>`
