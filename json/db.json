@@ -29,6 +29,24 @@
       "nome": "Zero Two",
       "valor": "02,02",
       "imagem": "https://i.pinimg.com/564x/6e/35/51/6e355189c8bce8da6d4a8c58acfa4040.jpg"
+    },
+    {
+      "id": "ca48",
+      "nome": "Cute Girl",
+      "valor": "30,00",
+      "imagem": "https://i.pinimg.com/564x/74/82/19/7482198663421a7ca423c7972f0f97f9.jpg"
+    },
+    {
+      "id": "17c8",
+      "nome": "Sailor Moon",
+      "valor": "10,50",
+      "imagem": "https://i.pinimg.com/564x/cb/8c/3e/cb8c3eac4c2af367220d919babb3f018.jpg"
+    },
+    {
+      "id": "e97c",
+      "nome": "Anya",
+      "valor": "500,00",
+      "imagem": "https://i.pinimg.com/564x/43/cd/7c/43cd7c65d590d2f41c05a23f3dfe82d4.jpg"
     }
   ]
 }

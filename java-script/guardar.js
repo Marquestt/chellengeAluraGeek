@@ -6,11 +6,6 @@ const formulario = document.querySelector('[data-formulario]');
 async function guardar(evento) {
     evento.preventDefault();
 
-    if (!validarFormulario(evento)) {
-        alert('Valores inválidos, por favor preencha o formulário novamente!');
-        return;
-    }
-
     const nome = document.querySelector('[data-nome]').value;
     const valor = document.querySelector('[data-valor]').value;
     const imagem = document.querySelector('[data-imagem]').value;
@@ -18,7 +13,7 @@ async function guardar(evento) {
     try {
         await conectaAPI.guardar(nome, valor, imagem);
         alert('Produto guardado com sucesso!');
-        
+            
         formulario.reset();
     }
     catch(e) {
@@ -26,4 +21,12 @@ async function guardar(evento) {
     }
 }
 
-formulario.addEventListener('submit', evento => guardar(evento));
+
+formulario.addEventListener('submit', function (evento) {
+    evento.preventDefault();
+    if (!validarFormulario()) {
+        alert('Valores inválidos, por favor preencha o formulário novamente!');
+        return;
+    }
+    guardar(evento);
+});

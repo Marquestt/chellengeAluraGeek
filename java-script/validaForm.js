@@ -26,23 +26,29 @@ export function validarFormulario() {
 }
 
 export function validarCampo(campo) {
+    let valido = true;
+    
     if (campo.name === 'nome' && campo.value.length < 3) {
+        valido = false;
         alertaNome.style.display = 'inline';
         alertaNome.innerHTML = `<p>Nome inválido! Deve conter no mínimo 3 caracteres.</p>`;
-        return false;
     } 
-    else if (campo.name === 'valor' && (!/^\d+(,\d+)?$/.test(campo.value) || campo.value.trim() === '')) {
-        alertaValor.style.display = 'inline';
-        alertaValor.innerHTML = `<p>Valor inválido! Deve ser um número positivo.</p>`;
-        return false;
+    else if (campo.name === 'valor') {
+        if (!/^\d+(,\d{2})?$/.test(campo.value) || campo.value.trim() === '') {
+            valido = false;
+            alertaValor.style.display = 'inline';
+            alertaValor.innerHTML = `<p>Valor inválido! Deve ser um número positivo com até duas casas decimais.</p>`;
+        }
     } 
-    else if (campo.name === 'imagem' && ((!/\.(jpeg|jpg|gif|png)$/i.test(campo.value) || campo.value.trim() === ''))) {
-        alertaImagem.style.display = 'inline';
-        alertaImagem.innerHTML = `<p>Imagem inválida! Deve ser um arquivo de imagem.</p>`;
-        return false
+    else if (campo.name === 'imagem') {
+        if (!/\.(jpeg|jpg|gif|png)$/i.test(campo.value) || campo.value.trim() === '') {
+            valido = false;
+            alertaImagem.style.display = 'inline';
+            alertaImagem.innerHTML = `<p>Imagem inválida! Deve ser um arquivo de imagem.</p>`;
+        }
     }
     
-    if (true) {
+    if (valido) {
         if (campo.name === 'nome') {
             alertaNome.style.display = 'none';
         } else if (campo.name === 'valor') {
@@ -51,4 +57,5 @@ export function validarCampo(campo) {
             alertaImagem.style.display = 'none';
         }
     }
+    return valido;
 }
